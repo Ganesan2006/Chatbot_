@@ -2,7 +2,7 @@ import streamlit as st
 from huggingface_hub import InferenceClient
 
 # Set your API key and model
-HF_API_KEY = os.environ["HF_TOKEN"]
+HF_API_KEY = os.environ["HF_API"]
 MODEL_ID = "meta-llama/Llama-3.2-1B-Instruct"
 
 client = InferenceClient(provider="auto", api_key=HF_API_KEY)
